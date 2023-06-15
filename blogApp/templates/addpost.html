@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a Post</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url("https://wallpaper.dog/large/5534658.jpg");
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            background-color: rgba(19, 13, 13, 0.71);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-heading {
+            text-align: center;
+            color: #6e0606;
+            margin-bottom: 20px;
+        }
+        .form-submit-btn {
+            margin-top: 20px;
+        }
+        .form{
+            text-decoration-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 class="form-heading">Post something cool</h2>
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form }}
+                <button class="btn btn-success form-submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+</body>
+</html>
